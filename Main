@@ -1,0 +1,4 @@
+local window = library:Window("Aim")
+local window = library:Window("ESP")
+local window = library:Window("Misc")
+local window = library:Window("Menu")
