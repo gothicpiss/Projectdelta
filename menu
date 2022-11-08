@@ -1,1 +1,30 @@
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/miroeramaa/TurtleLib/main/TurtleUiLib.lua"))()
+
+local window = library:Window("Aim")
+
+local window = library:Window("Visual")
+window:Button("Esp", function()
+    local ESP = loadstring(game:HttpGet("https://kiriot22.com/releases/ESP.lua"))()
+    ESP:Toggle(true)
+   print("pressed button")
+end)
+
+window:Button("Full bright", function()
+   game:GetService("Lighting").Brightness = 10
+   print("pressed button")
+end)
+
+
+
+local window = library:Window("Misc")
+
+local window = library:Window("Settings")
+window:Label("Left alt to open menu", Color3.fromRGB(127, 143, 166))
+window:Label("Credits to Intrer#0421", Color3.fromRGB(127, 143, 166))
+window:Label("Ui Text #1 non pub", Color3.fromRGB(127, 143, 166))
+--Open
+--Kill
+window:Button("Kill UI", function()
+    library:Destroy()
+   print("pressed button")
+end)
